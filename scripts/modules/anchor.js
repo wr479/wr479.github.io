@@ -1,7 +1,6 @@
 export default function anchor (){
-    
     $(document).ready(function(){
-        $('.header-container a ,.panel a').on('click', function(event) {
+        $('.header-container a ,.panel a ,.hero-container a').on('click', function(event) {
             var target = $($(this).attr('href'));
             if( target.length ) {
                 event.preventDefault();

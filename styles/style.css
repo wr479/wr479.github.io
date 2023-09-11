@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --container: 1720px;
 }
@@ -121,6 +120,9 @@ section .hero-section .hero-container .p-text {
   section .hero-section .hero-container .p-text {
     font-size: 18px;
   }
+}
+section .hero-section .hero-container a {
+  text-decoration: none;
 }
 section .hero-section .hero-container button {
   display: flex;
@@ -1078,12 +1080,11 @@ section .example-section .example-container .contant-two img {
 
 .panel {
   position: fixed;
-  top: 90px; /* Выравнивание с верхней частью header */
-  right: 0; /* Можете изменить на другое значение, если требуется */
-  width: 200px; /* Укажите нужную ширину */
-  /* Высота занимает всю доступную высоту */
+  top: 90px;
+  right: 0;
+  width: 200px;
   background-color: #FFF;
-  z-index: 10; /* Установите z-index в нужное значение */
+  z-index: 10;
   display: none;
   flex-direction: column;
   width: 100%;

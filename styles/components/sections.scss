@@ -52,6 +52,9 @@ section{
                     font-size: 18px;
                 }
             }
+            a{
+                text-decoration: none;
+            }
             button{
                 display: flex;
                 gap: 10px;
@@ -67,6 +70,7 @@ section{
                 padding: 15px 30px;
                 max-width: 325px;
                 border: none;
+               
                 @include mobile{
                     font-size: 18px;
                     max-width: 241px;
@@ -906,15 +910,14 @@ section{
     }
 }
 .panel{
-     position:fixed;
-  top: 90px; /* Выравнивание с верхней частью header */
-  right: 0; /* Можете изменить на другое значение, если требуется */
-  width: 200px; /* Укажите нужную ширину */
-   /* Высота занимает всю доступную высоту */
-  background-color: #FFF;
-  z-index: 10; /* Установите z-index в нужное значение */
-  display: none;
-  flex-direction: column;
+    position:fixed;
+    top: 90px;
+    right: 0;
+    width: 200px;
+    background-color: #FFF;
+    z-index: 10;
+    display: none;
+    flex-direction: column;
     width: 100%;
     .p-text{
         border-bottom: 1px solid rgb(0, 0, 0,0.1);
