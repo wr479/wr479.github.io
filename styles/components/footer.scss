@@ -15,7 +15,14 @@ footer{
                 border-radius: 32px;
             }
             .contant{
-                padding:40px 30px;
+                padding: 100px 300px;
+                @include tabletHorizontal{
+                    padding:40px 30px;
+
+                }
+                @include tabletVertical{
+                    padding: 40px 12px;
+                }
                 .footer-text{
                     display: flex;
                     justify-content: space-between;
@@ -26,6 +33,9 @@ footer{
                         display: flex;
                         flex-direction: column;
                         gap: 65px;
+                        @include tabletVertical{
+                            gap: 45px;
+                        }
                         .h1-text{
                             max-width: 525px;
                             font-size: 40px;
@@ -35,6 +45,9 @@ footer{
                             color: white;
                             @include tabletVertical{
                                 font-size: 24px;
+                            }
+                            @include tabletVertical{
+                                width: 252px;
                             }
                         }
                         .number{

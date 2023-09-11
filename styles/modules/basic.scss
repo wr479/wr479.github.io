@@ -15,14 +15,9 @@
         --container:880px;
     };
     @include mobile{
-        --container:500px;
+        --container:335px;
     };
-    @include small_mobile{
-        --container:345px;
-    };
-    @include small_mega_mobile{
-        --container:345px
-    };
+   
 };
 
 
@@ -34,7 +29,7 @@
     font-family: Inter Tight;
 }
 .rotate-90 {
-    transform: rotate(60deg);
+    transform: rotate(45deg);
     transition: transform 1s;
 }
 .error {

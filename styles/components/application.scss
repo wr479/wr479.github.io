@@ -1,6 +1,6 @@
 section{
     .application-section{
-        @include tabletVertical{
+        @include tabletHorizontal{
             margin: -8px;
             background: #025951;
         }
@@ -48,7 +48,7 @@ section{
                     align-items: center;
                 }
                 input{
-                    text-align: center;
+                    
                     box-sizing: border-box;
                     font-size: 20px;
                     font-style: normal;
@@ -75,7 +75,7 @@ section{
                     letter-spacing: -0.48px;
                     background:  #0D0D0D;
                     color: white;
-                    padding: 15px 30px;
+                    padding: 20px;
                     border: none;
                     max-width: 640px;
                     @include tabletVertical{

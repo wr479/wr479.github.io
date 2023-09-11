@@ -2,9 +2,9 @@ section{
     position: relative;
     .hero-section{
         .hero-container{
-            padding:120px;
+            padding:80px;
             padding-top: 260px;
-            padding-bottom: 260px;
+            padding-bottom: 300px;
             background-color:rgba(13, 13, 13, 0.1);
             background-image: url(../images/car-hero.png);
             background-repeat: no-repeat;
@@ -88,6 +88,7 @@ section{
             @include tabletVertical{
                 flex-direction: column;
                 gap: 60px;
+                padding: 0 15px;
             }
             .p-text-work .p-text{
                 font-size: 20px;
@@ -122,6 +123,10 @@ section{
                 .middle{
                     display: flex;
                     gap: 104px;
+                    @include tabletVertical{
+                        gap: 40px;
+                        flex-direction: column;
+                    }
                     .p-text{
                         max-width: 376px;
                         font-size: 20px;
@@ -150,7 +155,7 @@ section{
         }
     }
     .our-advantages-section{
-        @include tabletVertical{
+        @include tabletHorizontal{
             margin: -8px;
             background: #0D0D0D;
         }
@@ -176,6 +181,7 @@ section{
                 }
                 @include tabletVertical{
                     display: block;
+                    padding: 0 1px;
 
                 }
                 .h1-text{
@@ -312,6 +318,7 @@ section{
                 }
                 @include tabletVertical{
                     flex-direction: column;
+                    padding: 0 1px;
                 }
                 img{
                     max-width: 577px;
@@ -394,6 +401,10 @@ section{
             @include tabletHorizontal{
                 padding: 0 43px;
             }
+            @include tabletVertical{
+                padding: 0 11px;
+                margin: 80px 0;
+            }
             .installation{
                 display: flex;
                 flex-direction: column;
@@ -420,6 +431,7 @@ section{
                     font-style: normal;
                     font-weight: 500;
                     line-height: 130%;
+                    color: rgba(140, 140, 140, 1);
                     @include tabletVertical{
                         margin-top: 20px;
                     }
@@ -452,7 +464,7 @@ section{
                         img{
                             width: 100%;
                             border-radius: 16px;
-                            border: 5px solid  #BFBFBF;
+                            border: 2px solid #BFBFBF;
                             padding: 1px;
                             @include tabletVertical{
                                 width: 50%;
@@ -512,6 +524,9 @@ section{
                     gap: 39px;
                 }
                 .text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
                     @include tabletVertical{
                         display: flex;
                         flex-direction: column;
@@ -595,6 +610,9 @@ section{
             @include tabletHorizontal{
                 padding: 0 43px;
             }
+            @include tabletVertical{
+                padding: 0 12px;
+            }
             .h1-text{
                 font-size: 58px;
                 font-style: normal;
@@ -619,7 +637,7 @@ section{
                     gap: 20px;
                     img{
                         border-radius: 16px;
-                        max-width: 620px;
+                       
                         max-height: 400px;
                         @include mobile{
                             width: 100%;
@@ -644,7 +662,7 @@ section{
         }
     }
     .video-decription-section{
-        @include tabletVertical{
+        @include tabletHorizontal{
             margin: -8px;
             background-color: #0D0D0D;
           
@@ -661,8 +679,8 @@ section{
                 @include tabletHorizontal{
                     padding: 80px 43px;
                 }
-                @include mobile{
-                    padding: 40px 20px;
+                @include tabletVertical{
+                    padding: 40px 0px;
                 }
             .h1-text{
                 max-width: 490px;
@@ -682,20 +700,23 @@ section{
                 @include tabletVertical{
                     flex-direction: column;
                 }
+                video{
+                    width: 580px;
+                    height: 592px;
+                    flex-shrink: 0;
+                    @include tabletVertical{
+                        width: 335px;
+                        height: 494px;
+                    }
+                    
+                }
                 .text{
                     display: flex;
                     flex-direction: column;
                     gap: 40px;
-                    video{
-                        width:100%;
-                        height: 548px;
-                        @include tabletVertical{
-                            width: 335px;
-                            height: 494px;
-                        }
-                        
-                    }
+                    
                     .h1-text{
+                        font-size: 40px;
                         @include mobile{
                             font-size: 24px;
 
@@ -750,6 +771,8 @@ section{
                 }
                 @include tabletVertical{
                     display: block;
+                    padding: 0;
+                    text-align: left;
                 }
                 .h1-text{
                     display: block;
@@ -818,6 +841,7 @@ section{
                 gap: 90px;
                 padding: 0 220px;
                 justify-content: center;
+                margin-top: 120px;
                 @include tabletHorizontal{
                     padding: 43px;
                 }
@@ -868,10 +892,12 @@ section{
                         }
                     }
                     .grids{
+                        margin-top: 0;
                         display: grid;
                         grid-template-columns: 1fr;
                         gap: 20px;
                         .p-text{
+                            color: #000;
                             display: flex;
                             justify-content: center;
                             text-align: center;
@@ -883,6 +909,9 @@ section{
                             padding: 10px 20px;
                             border-radius: 1000px;
                             border: 1px solid  #0D0D0D;
+                            @include tabletVertical{
+                                font-size: 18px;
+                            }
                         }
                         .one-srtuct,.two-struct{
                             display: flex;

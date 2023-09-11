@@ -14,7 +14,7 @@ export default function header (){
             isFixed = true;
           } else if (scrollTop <= headerHeight && isFixed) {
             header.removeClass("fixed");
-           
+            $('.header-container').removeClass("container");
             isFixed = false;
           }
         }

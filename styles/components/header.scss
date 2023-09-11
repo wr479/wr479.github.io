@@ -2,7 +2,7 @@ header {
     width: 100%;
     z-index: 200;
     top: 20px;
-    position: absolute;
+    position: fixed;
     .header-container {
       position: relative;
       display: flex;
@@ -10,17 +10,21 @@ header {
       border-bottom: none;
       align-items: center;
       justify-content: space-between;
-      padding: 0px 80px;
+      padding: 60px 80px;
+    
+      @include tabletHorizontal{
+        padding: 60px 40px;
+      }
       @include tabletVertical{
-        padding: 35px;
-        padding: 15px 35px;
+        padding: 15px 15px;
+        padding-right: 30px;
        
         
     }
     img{
       @include tabletVertical{
         width: 132.568px;
-height: 55px;
+        height: 55px;
       }
     }
       .mobile-on{
@@ -70,9 +74,9 @@ height: 55px;
         cursor: pointer;
       }
       &.fixed {
-        padding:15px 120px;
+        padding: 20px 80px;
         background-color: white;
-        border-bottom: 1px solid rgb(0, 0, 0.1);
+        border-bottom: 1px solid rgb(0, 0, 0,0.1);
         width: calc(100% - 160px);
         position: fixed;
         top: 0;
@@ -81,14 +85,16 @@ height: 55px;
             padding: 15px 30px;
             width: calc(100% - 80px);
         }
-        // @include tabletVertical{
-        //     padding: 15px;
+        @include tabletVertical{
+          width: calc(100% - 45px);
+          padding: 15px 15px;
+          padding-right: 30px;
+          margin-left: -8px;
+        }
+
           svg{
             position: relative;
-          }
-           
-            
-        // }
+          }   
       }
     }
   }

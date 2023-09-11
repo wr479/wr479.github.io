@@ -1,7 +1,7 @@
 section{
     .video-section{
         margin-bottom: 160px;
-        @include tabletVertical{
+        @include tabletHorizontal{
             margin: -8px;
             background-color: #0D0D0D;
             margin-bottom: 80px;
@@ -20,14 +20,13 @@ section{
                 border-radius: 16px;
                 @include tabletVertical{
                     grid-template-columns: 1fr;
+                    padding: 40px 0px;
                 }
-                @include mobile{
-                    padding: 20px;
-                }
+                
                 video{
                     border-radius: 16px;
                     width: 580px;
-                    height: 494px;
+                    height: 554px;
                     spect-ratio: 16 / 9;
                     @include mobile{
                         width: 100%;
