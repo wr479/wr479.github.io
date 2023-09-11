@@ -1,0 +1,143 @@
+footer{
+    .footer-section{
+        .footer-container{
+            background-color:#0D0D0D ;
+            margin: 20px;
+            margin-top:160px ;
+            border-radius: 64px;
+            @include tabletHorizontal{
+                margin: 13px;
+                margin-top:160px ;
+            }
+            @include tabletVertical{
+                margin: 0px;
+                margin-top: 80px;
+                border-radius: 32px;
+            }
+            .contant{
+                padding:40px 30px;
+                .footer-text{
+                    display: flex;
+                    justify-content: space-between;
+                    @include tabletVertical{
+                        flex-direction: column;
+                    }
+                    .text{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 65px;
+                        .h1-text{
+                            max-width: 525px;
+                            font-size: 40px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 110%;
+                            color: white;
+                            @include tabletVertical{
+                                font-size: 24px;
+                            }
+                        }
+                        .number{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            
+                            a{
+                                @include tabletVertical{
+                                    font-size: 18px;
+                                }
+                                display: flex;
+                                gap: 20px;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 130%;
+                                color: white;
+                                text-decoration: none;
+                            }
+                        }
+                        
+                    }
+                    .input-form{
+                        display: flex;
+                        flex-direction: column;
+                        .p-text{
+                            @include tabletVertical{
+                                font-size: 16px;
+                            }
+                            max-width: 626px;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 130%;
+                            color: #8C8C8C;
+                            margin-bottom: 70px;
+                        }
+                        .inputs{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            input{
+                                @include tabletVertical{
+                                    font-size: 16px;
+                                }
+                                max-width: 640px;
+                                padding: 20px;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 130%;
+                                color:rgba(13, 13, 13, 1) ;
+                                border-radius: 4px;
+                            border: 1px solid  #BFBFBF;
+                            background:  #FFF;
+                            }
+                        }
+                    }
+                }
+                .end-footer{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 30px;
+                    @include tabletVertical{
+                        flex-direction: column-reverse;
+                        gap: 40px;
+                    }
+                    .p-text{
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 120%;
+                        max-width: 424px;
+                        color: rgba(255, 255, 255, 1);
+                        align-items: start;
+                        opacity: 0.4;
+                        @include tabletVertical{
+                            font-size: 12px;
+                        }
+                    }
+                    button{
+                        width: 630px;
+                        padding: 15px 30px;
+                        border-radius: 1000px;
+                        background:  #025951;
+                        border: none;
+                        align-items: flex-end;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: -0.48px;
+                        color: white;
+                        @include tabletVertical{
+                            font-size: 18px;
+                        }
+                        @include mobile{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

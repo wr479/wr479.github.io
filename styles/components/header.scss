@@ -1,0 +1,107 @@
+header {
+    width: 100%;
+    z-index: 200;
+    top: 20px;
+    position: absolute;
+    .header-container {
+      position: relative;
+      display: flex;
+      background-color: none;
+      border-bottom: none;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 80px;
+      @include tabletVertical{
+        padding: 35px;
+        padding: 15px 35px;
+       
+        
+    }
+    img{
+      @include tabletVertical{
+        width: 132.568px;
+height: 55px;
+      }
+    }
+      .mobile-on{
+        display: none;
+        @include tabletVertical{
+          display: block;
+        }
+       }
+      .category {
+        display: flex;
+        gap: 60px;
+        @include tabletVertical{
+            display: none;
+        }
+        a {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          color: #000;
+          text-decoration: none;
+        }
+      }
+      .mobile-none{
+        @include tabletVertical{
+            display: none;
+        }
+        .mobile-on{
+          display: none;
+            @include tabletVertical{
+                display: block;
+            }
+        }    
+        
+    }
+        
+      
+      button {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.36px;
+        padding: 12px 20px;
+        border-radius: 1000px;
+        border: 1px solid #000;
+        background: none;
+        cursor: pointer;
+      }
+      &.fixed {
+        padding:15px 120px;
+        background-color: white;
+        border-bottom: 1px solid rgb(0, 0, 0.1);
+        width: calc(100% - 160px);
+        position: fixed;
+        top: 0;
+        animation: fadeInDown 0.3s ease-in-out;
+        @include laptop{
+            padding: 15px 30px;
+            width: calc(100% - 80px);
+        }
+        // @include tabletVertical{
+        //     padding: 15px;
+          svg{
+            position: relative;
+          }
+           
+            
+        // }
+      }
+    }
+  }
+  
+  
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

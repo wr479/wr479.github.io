@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/app.js" type="module"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header id="header">
+      <div class="header-section">
+        <div class="header-container ">
+          <a href="#header"><img src="images/header/Group 37.svg"></a>
+          <div class="category">
+            <a href="#rams" class="p-text">ВИДЫ РАМОК</a>
+            <a href="#our-advantages" class="p-text">ПРЕИМУЩЕСТВА</a>
+            <a href="#scheme-work" class="p-text">СХЕМА РАБОТЫ</a>
+            <a href="#example" class="p-text">ПРИМЕРЫ РАБОТ</a>
+            <a href="#questions" class="p-text">FAQ</a>
+          </div>
+          <a href="#application"><button class="btn mobile-none">ОБРАТНЫЙ ЗВОНОК</button></a>
+          <svg class="mobile-on open-panel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z" fill="#09121F"/>
+          </svg>
+        </div>
+      </div>
+    </header>
+    <div class="panel">
+      <a href="#rams" class="p-text">ПРЕИМУЩЕСТВА</a >
+      <a href="#our-advantages" class="p-text">ТОВАРЫ</a >
+      <a href="#scheme-work" class="p-text">ПРОЦЕСС</a >
+      <a href="#example" class="p-text">ПОРТФОЛИО</a >
+      <a href="#questions" class="p-text">ДОСТАВКА</a >
+      <button class="btn"></button>
+    </div>
+    <main>
+      <section>
+         <div class="hero-section">
+          <div class="hero-container">
+            <span class="h1-text">Откидные рамки и номера на любую машину</span>
+            <span class="p-text">Безотказная работа на скорости до 324 км/ч в любую погоду с гарантией от 365 дней</span>
+            <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M15.9998 2.66669C23.3598 2.66669 29.3332 8.64002 29.3332 16C29.3332 23.36 23.3598 29.3334 15.9998 29.3334C8.63984 29.3334 2.6665 23.36 2.6665 16C2.6665 8.64002 8.63984 2.66669 15.9998 2.66669ZM15.9998 14.6667H10.6665V17.3334H15.9998V21.3334L21.3332 16L15.9998 10.6667V14.6667Z" fill="white"/>
+            </svg>ЗАКАЗАТЬ УСЛУГУ</button>
+
+          </div>
+         </div>
+      </section>
+      <section>
+        <div class="scheme-work-section" id="scheme-work">
+          <div class="schreme-work-container container">
+            <div class="p-text-work">
+              <span class="p-text">СХЕМА РАБОТЫ</span>
+            </div>
+            <div class="main-contant">
+              <span class="h1-text">Рамки управляются с <span class="green">пульта дистанционного управления</span> или программируемых кнопок на руле</span>
+              <div class="middle">
+                <span class="p-text">Одно нажатие на кнопку пульта и ваши рамки откидываются под углом 90 градусов.</span>
+                <span class="p-text">Вторым нажатием на кнопку механизм быстро вернет рамки в изначальное положение.</span>
+              </div>
+              <span class="h1-text-grey">Индикация в салоне авто всегда сориентирует вас в каком положении находится номер.</span>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="our-advantages-section" id="our-advantages">
+          <div class="our-advantages-container container">
+            <div class="contant " >
+              <span class="h1-text">Преимущества наших рамок</span>
+              <div class="mobile-fix swiper mySwiper">
+                <div class=" swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <span class="numbers-text">01.</span>
+                      <div class="description">
+                        <span class="h1-text">Самый быстрый и надежный механизм</span>
+                        <span class="p-text">Время срабатывания 0,2 секунды!</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <span class="numbers-text">02.</span>
+                      <div class="description">
+                        <span class="h1-text">Самый быстрый и надежный механизм</span>
+                        <span class="p-text">Время срабатывания 0,2 секунды!</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <span class="numbers-text">03.</span>
+                      <div class="description">
+                        <span class="h1-text">Рамку невозможно оттянуть руками</span>
+                        <span class="p-text">Прочная фиксация механизма в исходном положении</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <span class="numbers-text">04.</span>
+                      <div class="description">
+                        <span class="h1-text">Скрытый механизм с невидимыми петлями</span>
+                        <span class="p-text">Уникальная система скрытия петель, которые невозможно обнаружить</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <span class="numbers-text">05.</span>
+                      <div class="description">
+                        <span class="h1-text">Полное отсутствие зазоров</span>
+                        <span class="p-text">Монтаж системы без зазоров</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <span class="numbers-text">06.</span>
+                      <div class="description">
+                        <span class="h1-text">Установка без распила усилителя бампера</span>
+                        <span class="p-text">Самый узкий механизм позволяет в 97% случаев сохранить усилитель бампера</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <span class="numbers-text">07.</span>
+                      <div class="description">
+                        <span class="h1-text">Система защищена от ржавчины и закисания</span>
+                        <span class="p-text">Все комплектующие выполнены из высококачественной нержавеющей стали</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <span class="numbers-text">08.</span>
+                      <div class="description">
+                        <span class="h1-text">Гарантия от 12 месяцев</span>
+                        <span class="p-text">На механизмы и все работы предоставляем гарантию от 365 дней</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Добавьте другие слайды здесь, если необходимо -->
+                </div>
+                <div class="navifations">
+                  <div class="swiper-button-pre"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7.828 10.9999L13.192 5.63592L11.778 4.22192L4 11.9999L11.778 19.7779L13.192 18.3639L7.828 12.9999L20 12.9999L20 10.9999L7.828 10.9999Z" fill="#09121F"/>
+                  </svg></div>
+                  <div class="swiper-button-nex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16.172 10.9999L10.808 5.63592L12.222 4.22192L20 11.9999L12.222 19.7779L10.808 18.3639L16.172 12.9999H4V10.9999H16.172Z" fill="#09121F"/>
+                  </svg></div>
+                </div>
+              </div>
+              
+              
+              <div class="grids">
+                <div class="grid">
+                  <span class="numbers-text">01.</span>
+                  <div class="description">
+                    <span class="h1-text">Самый быстрый и надежный механизм</span>
+                    <span class="p-text">Время срабатывания 0,2 секунды!</span>
+                  </div>
+                </div>
+                <div class="grid">
+                  <span class="numbers-text">02.</span>
+                  <div class="description">
+                    <span class="h1-text">Уверенная работа на скорости до 326 км/ч</span>
+                    <span class="p-text">Производим самые мощные и малогабаритные моторы</span>
+                  </div>
+                </div>
+                <div class="grid">
+                  <span class="numbers-text">03.</span>
+                  <div class="description">
+                    <span class="h1-text">Рамку невозможно оттянуть руками</span>
+                    <span class="p-text">Прочная фиксация механизма в исходном положении</span>
+                  </div>
+                </div>
+                <div class="grid">
+                  <span class="numbers-text">04.</span>
+                  <div class="description">
+                    <span class="h1-text">Скрытый механизм с невидимыми петлями</span>
+                    <span class="p-text">Уникальная система скрытия петель, которые невозможно обнаружить</span>
+                  </div>
+                </div>
+                <div class="grid">
+                  <span class="numbers-text">05.</span>
+                  <div class="description">
+                    <span class="h1-text">Полное отсутствие зазоров</span>
+                    <span class="p-text">Монтаж системы без зазоров</span>
+                  </div>
+                </div>
+                <div class="grid">
+                  <span class="numbers-text">06.</span>
+                  <div class="description">
+                    <span class="h1-text">Установка без распила усилителя бампера</span>
+                    <span class="p-text">Самый узкий механизм позволяет в 97% случаев сохранить усилитель бампера</span>
+                  </div>
+                </div>
+                <div class="grid">
+                  <span class="numbers-text">07.</span>
+                  <div class="description">
+                    <span class="h1-text">Система защищена от ржавчины и закисания</span>
+                    <span class="p-text">Все комплектующие выполнены из высококачественной нержавеющей стали</span>
+                  </div>
+                </div>
+                <div class="grid">
+                  <span class="numbers-text">08.</span>
+                  <div class="description">
+                    <span class="h1-text">Гарантия от 12 месяцев</span>
+                    <span class="p-text">На механизмы и все работы предоставляем гарантию от 365 дней</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="rams">
+        <div class="description-section" >
+          <div class="description-container container">
+            <div class="contant">
+              <img src="images/img/metal.png" alt="">
+              <div class="main-description">
+                <span class="h1-text">Откидная рамка на жесткой тяге с 2 шарнирами</span>
+                <span class="description-text">Работает на основании прямого соединения откидной пластины и стержня диаметром 9 мм, с помощью которого рамка откидывается на 90 градусов.</span>
+                <span class="p-text">Если пластина находится в начальном положении, невозможно определить наличие специального оборудования на автомобиле.</span>
+                <span class="price-text">от 6 500 ₽</span>
+              </div>
+            </div>
+            <div class="contant">
+              <img src="images/img/metal2.png" alt="">
+              <div class="main-description">
+                <span class="h1-text">Откидная рамка на гибкой тяге</span>
+                <span class="description-text">Разработана на случай, когда рамка на жесткой тяге не подходит</span>
+                <span class="p-text">Данная рамка объединила в себе механизм с жесткой тягой и тросовым соединением. Рамку можно поставить на заднюю дверь или бампер любого типа авто.</span>
+                <span class="price-text">от 6 500 ₽</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="application-section">
+          <div class="application-container container">
+            <span class="h1-text">Оставить заявку на обратный звонок</span>
+            <span class="p-text">Заполните форму и получите подробную консультацию по интересующим вас вопросам</span>
+            <div class="input-form">
+              <input id="nameInput" placeholder="Ваше Имя">
+              <input  id="phoneInput" name="phone" placeholder="Номер телефона">
+              <button id="submitButton" class="btn">Получить консультацию</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="variables-section">
+          <div class="variables-container container">
+            <span class="h1-text">Варианты установки</span>
+            <div class="contant">
+              <div class="card">
+                  <img src="images/img/rama1.png" alt="">
+                  <span class="h1-text">Вариант установки механизма с откидывающейся рамкой</span>
+                  <span class="p-text">В этом варианте откидывается рамка вместе с номером</span>
+              </div>
+              <div class="card">
+                  <img src="images/img/rama2.png" alt="">
+                  <span class="h1-text">Вариант с откидным номером, а не всей рамки</span>
+                  <span class="p-text">Это новейший вариант установки при котором откидывается только номер, рамка остается на месте.</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="video-section">
+          <div class="video-container container">
+            <div class="contant">
+              <video controls>
+                <source  src="images/video/video-number.mp4" type="video/mp4">
+              </video>
+              <div class="text">
+                <span class="h1-text">Пульт с блоком управления</span>
+                <span class="p-text">4 канала. Может применяться как к одной рамке, так и к паре.</span>
+                <ul>
+                  <li>Лучшая альтернатива кнопки управления в салоне</li>
+                  <li>Качественная и бесперебойная работа</li>
+                  <li>Подходит на любой автомобиль</li>
+                </ul>
+                <span class="price">от 4 500 ₽</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="application-section">
+          <div class="application-container container">
+            <span class="h1-text">Оставить заявку на обратный звонок</span>
+            <span class="p-text">Заполните форму и получите подробную консультацию по интересующим вас вопросам</span>
+            <div class="input-form">
+              <input id="nameInput" placeholder="Ваше Имя">
+              <input  id="phoneInput" name="phone" placeholder="Номер телефона">
+              <button id="submitButton" class="btn">Получить консультацию</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="installation-section">
+          <div class="installation-container container">
+            <div class="installation">
+              <span class="h1-text">Комплектующие для установки</span>
+              <span class="small-grey-text">Для безотказной работы системы используем следующие комплектующие:</span>
+              <div class="mobile-fix swiper mySwipe">
+                <div class=" swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <img src="images/installarion/key.png">
+                      <span class="p-text">Блок управления с пультом</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <img src="images/installarion/wite.png">
+                      <span class="p-text">Клеммы на аккумулятор</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <img src="images/installarion/wite2.png">
+                      <span class="p-text">Водозащищенный разъем</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <img src="images/installarion/wite3.png">
+                      <span class="p-text">Световая индикация в салон</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <img src="images/installarion/wile4.png">
+                      <span class="p-text">Специальная клеевая термоусадка</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <img src="images/installarion/wite5.png">
+                      <span class="p-text">Секретная кнопка</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <img src="images/installarion/wite6.png">
+                      <span class="p-text">Герконовый датчик</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <img src="images/installarion/wite7.png">
+                      <span class="p-text">Предохранитель</span>
+                    </div>
+                  </div>
+                  <!-- Добавьте другие слайды здесь, если необходимо -->
+                </div>
+                <div class="navifations">
+                  <div class="swiper-button-pr"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7.828 10.9999L13.192 5.63592L11.778 4.22192L4 11.9999L11.778 19.7779L13.192 18.3639L7.828 12.9999L20 12.9999L20 10.9999L7.828 10.9999Z" fill="#09121F"/>
+                  </svg></div>
+                  <div class="swiper-button-ne"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16.172 10.9999L10.808 5.63592L12.222 4.22192L20 11.9999L12.222 19.7779L10.808 18.3639L16.172 12.9999H4V10.9999H16.172Z" fill="#09121F"/>
+                  </svg></div>
+                </div>
+              </div>
+              <div class="grids">
+                <div class="grid">
+                  <img src="images/installarion/key.png">
+                  <span class="p-text">Блок управления с пультом</span>
+                </div>
+                <div class="grid">
+                  <img src="images/installarion/wite.png">
+                  <span class="p-text">Клеммы на аккумулятор</span>
+                </div>
+                <div class="grid">
+                  <img src="images/installarion/wite2.png">
+                  <span class="p-text">Водозащищенный разъем</span>
+                </div>
+                <div class="grid">
+                  <img src="images/installarion/wite3.png">
+                  <span class="p-text">Световая индикация в салон</span>
+                </div>
+                <div class="grid">
+                  <img src="images/installarion/wile4.png">
+                  <span class="p-text">Специальная клеевая термоусадка</span>
+                </div>
+                <div class="grid">
+                  <img src="images/installarion/wite5.png">
+                  <span class="p-text">Секретная кнопка</span>
+                </div>
+                <div class="grid">
+                  <img src="images/installarion/wite6.png">
+                  <span class="p-text">Герконовый датчик</span>
+                </div>
+                <div class="grid">
+                  <img src="images/installarion/wite7.png">
+                  <span class="p-text">Предохранитель</span>
+                </div>
+              </div>
+            </div>
+            <div class="questions" id="questions">
+              <div class="text">
+                <span class="h1-text">Частые вопросы и ответы</span>
+                <span class="p-text">Отвечаем на самые распространенные вопросы клиентов</span>
+              </div>
+              <div class="questions-contant">
+                <div class="one">
+                  <div class="start">
+                    <span class="h1-text">Какие примерные сроки реализации работ?</span>
+                    <img src="images/icon/open-close.svg" alt="" id="rotate-btn-1">
+                  </div>
+                  <span class="one-answer p-text">Все важные технические детали по установке обговариваются с клиентом при приемке и в ходе работы.</span>
+                </div>
+                <div class="two">
+                  <div class="start">
+                    <span class="h1-text">Какие примерные сроки реализации работ?</span>
+                    <img src="images/icon/open-close.svg" alt="" id="rotate-btn-2">
+                  </div>
+                  <span class="two-answer p-text">Все важные технические детали по установке обговариваются с клиентом при приемке и в ходе работы.</span>
+                </div>
+                <div class="three">
+                  <div class="start">
+                      <span class="h1-text">Какие примерные сроки реализации работ?</span>
+                      <img src="images/icon/open-close.svg" alt="" id="rotate-btn-3">
+                  </div>
+                  <span class="three-answer p-text" style="display: none;">Все важные технические детали по установке обговариваются с клиентом при приемке и в ходе работы.</span>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="application-section" id="application">
+          <div class="application-container container">
+            <span class="h1-text">Оставить заявку на обратный звонок</span>
+            <span class="p-text">Заполните форму и получите подробную консультацию по интересующим вас вопросам</span>
+            <div class="input-form">
+              <input id="nameInput" placeholder="Ваше Имя">
+              <input  id="phoneInput" name="phone" placeholder="Номер телефона">
+              <button id="submitButton" class="btn">Получить консультацию</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="video-decription-section">
+          <div class="video-container container">
+            <div class="contant">
+              <span class="h1-text">Производство механизмов</span>
+              <div class="main-contant">
+                <video controls>
+                  <source  src="images/video/video-number.mp4" type="video/mp4">
+                </video>
+                <div class="text">
+                  <span class="p-text">За счет лазерной точности на производстве система работает безотказно как швейцарские часы</span>
+                  <span class="h1-text">Откидные рамки из нержавеющей стали собственного производства</span>
+                  <span class="description-p">Используем высокоточное лазерное и гибочное оборудование. Сборка и контроль качества в заводских условиях позволяют устанавливать безотказные системы с нулевыми зазорами.</span>
+                </div>
+              </div>
+                
+              </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section>
+        <div class="example-section" id="example">
+          <div class="example-container container">
+            <div class="contant">
+              <span class="h1-text">Примеры установленных механизмов</span>
+              <span class="small-grey-text">Мы разработали уникальную систему, в которой каждая деталь продумана и используется для максимального комфорта. Особое внимание уделяется комплектующим и качеству сборки.</span>
+              <div class="grids">
+                <img src="images/img/example.png">
+                <img src="images/img/example2.png">
+                <img src="images/img/example3.png">
+                <img src="images/img/example4.png">
+                <img src="images/img/example5.png">
+                <img src="images/img/example6.png">
+              </div>
+              <div class="mobile-fix swiper mySwip">
+                <div class=" swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <img src="images/img/example.png">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <img src="images/img/example2.png">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid">
+                      <img src="images/img/example3.png">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/img/example4.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/img/example4.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/img/example5.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/img/example6.png">
+                  </div>
+                </div>
+                <div class="navifations">
+                  <div class="swiper-button-p"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7.828 10.9999L13.192 5.63592L11.778 4.22192L4 11.9999L11.778 19.7779L13.192 18.3639L7.828 12.9999L20 12.9999L20 10.9999L7.828 10.9999Z" fill="#09121F"/>
+                  </svg></div>
+                  <div class="swiper-button-n"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16.172 10.9999L10.808 5.63592L12.222 4.22192L20 11.9999L12.222 19.7779L10.808 18.3639L16.172 12.9999H4V10.9999H16.172Z" fill="#09121F"/>
+                  </svg></div>
+                </div>
+            </div>
+            <div class="contant-two">
+              <div class="text">
+                <span class="h1-text">Предлагаем выгодные условия партнерства</span>
+                <span class="p-text">Комплекс услуг от производства до профессионального обучения установке на любой класс автомобиля</span>
+                <span class="big-grey-text">Партнеры, прошедшие обучение производят квалифицированную установку в следующих городах:</span>
+                
+                <div class="grids">
+                  <div class="one-srtuct">
+                    <span class="p-text">Санкт-Петербург</span>
+                    <span class="p-text">Краснодар</span>
+                    <span class="p-text">Уфа</span>
+                  
+                 
+                    <span class="p-text">Самара</span>
+                  <span class="p-text">Тольятти</span>
+                  <span class="p-text">Нижневартовск</span>
+                  </div>
+                  
+                </div>
+              </div>
+              <img src="images/img/cart.png">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-section">
+        <div class="footer-container">
+          <div class="contant">
+            <div class="footer-text">
+              <div class="text">
+                <span class="h1-text">Москва, 2-й Магистральный тупик, 5А</span>
+                <div class="number">
+                  <a href="tel:+79246471213" class="p-text"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M12.488 14.2427C13.7391 16.4406 15.5594 18.2609 17.7573 19.512L18.936 17.8613C19.1255 17.5959 19.4058 17.4092 19.7237 17.3364C20.0417 17.2637 20.3752 17.31 20.6613 17.4667C22.5471 18.4972 24.6296 19.117 26.772 19.2853C27.1064 19.3118 27.4185 19.4634 27.6461 19.7098C27.8737 19.9561 28 20.2793 28 20.6147V26.564C28.0001 26.8941 27.8777 27.2125 27.6565 27.4576C27.4353 27.7027 27.1311 27.857 26.8027 27.8907C26.096 27.964 25.384 28 24.6667 28C13.2533 28 4 18.7467 4 7.33333C4 6.616 4.036 5.904 4.10933 5.19733C4.14301 4.86893 4.29731 4.56469 4.54239 4.34351C4.78746 4.12233 5.10587 3.99993 5.436 4H11.3853C11.7207 3.99996 12.0439 4.12634 12.2902 4.35393C12.5366 4.58153 12.6882 4.89363 12.7147 5.228C12.883 7.37039 13.5028 9.45291 14.5333 11.3387C14.69 11.6248 14.7363 11.9583 14.6636 12.2763C14.5908 12.5942 14.4041 12.8745 14.1387 13.064L12.488 14.2427ZM9.12533 13.3667L11.6587 11.5573C10.9397 10.0055 10.4471 8.35845 10.196 6.66667H6.68C6.672 6.888 6.668 7.11067 6.668 7.33333C6.66667 17.2747 14.7253 25.3333 24.6667 25.3333C24.8893 25.3333 25.112 25.3293 25.3333 25.32V21.804C23.6415 21.5529 21.9945 21.0603 20.4427 20.3413L18.6333 22.8747C17.9049 22.5916 17.1973 22.2575 16.516 21.8747L16.4387 21.8307C13.8234 20.3423 11.6577 18.1766 10.1693 15.5613L10.1253 15.484C9.74254 14.8027 9.40838 14.0951 9.12533 13.3667Z" fill="white"/>
+                  </svg>+7 (924) 647-12-13</a>
+                  <a href="mailto:hello@redlights.com" class="p-text"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M3.99984 4H27.9998C28.3535 4 28.6926 4.14048 28.9426 4.39052C29.1927 4.64057 29.3332 4.97971 29.3332 5.33333V26.6667C29.3332 27.0203 29.1927 27.3594 28.9426 27.6095C28.6926 27.8595 28.3535 28 27.9998 28H3.99984C3.64622 28 3.30708 27.8595 3.05703 27.6095C2.80698 27.3594 2.6665 27.0203 2.6665 26.6667V5.33333C2.6665 4.97971 2.80698 4.64057 3.05703 4.39052C3.30708 4.14048 3.64622 4 3.99984 4ZM26.6665 9.65067L16.0958 19.1173L5.33317 9.62133V25.3333H26.6665V9.65067ZM6.0145 6.66667L16.0812 15.5493L26.0025 6.66667H6.0145Z" fill="white"/>
+                  </svg>hello@redlights.com</a>
+                </div>
+              </div>
+              <div class="input-form">
+                <span class="p-text">Заполните форму и получите подробную консультацию по интересующим вас вопросам</span>
+                <div class="inputs">
+                  <input id="name" placeholder="Ваше Имя">
+                  <input  id="phone" name="phone" placeholder="Номер телефона">
+                </div>
+              </div>
+            </div>
+            <div class="end-footer">
+              <span class="p-text">Сайт носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437 ГК РФ.</span>
+              <button id="submit" class="btn">Получить консультацию</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/imask"></script>
+</body>
+</html>

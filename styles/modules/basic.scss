@@ -1,0 +1,42 @@
+:root{
+    --container:  1720px;
+    // --content: 872px;
+    @include laptop{
+        --container:1600px;
+    };
+
+    @include small-laptop{
+        --container:1400px;
+    };
+    @include tabletHorizontal{
+        --container:100%
+    }
+    @include tabletVertical{
+        --container:880px;
+    };
+    @include mobile{
+        --container:500px;
+    };
+    @include small_mobile{
+        --container:345px;
+    };
+    @include small_mega_mobile{
+        --container:345px
+    };
+};
+
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto
+}
+*{
+    font-family: Inter Tight;
+}
+.rotate-90 {
+    transform: rotate(60deg);
+    transition: transform 1s;
+}
+.error {
+    border: 1px solid red;
+}

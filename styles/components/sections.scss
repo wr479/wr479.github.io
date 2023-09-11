@@ -1,0 +1,934 @@
+section{
+    position: relative;
+    .hero-section{
+        .hero-container{
+            padding:120px;
+            padding-top: 260px;
+            padding-bottom: 260px;
+            background-color:rgba(13, 13, 13, 0.1);
+            background-image: url(../images/car-hero.png);
+            background-repeat: no-repeat;
+            object-fit: contain ;
+            margin: 10px;
+            background-position: right bottom;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 40px;
+            border-radius: 64px;
+           @include laptop{
+            padding: 30px;
+            padding-top: 230px;
+            padding-bottom: 260px;
+           }
+           @include tabletVertical{
+            height: 100%;
+            padding: 150px 15px;
+            padding-top: 150px;
+            background-size:contain ;
+            margin: 5px;
+            border-radius: 16px;
+
+           }
+            .h1-text{
+                display: block;
+                font-size: 78px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 110%;
+                max-width: 954px;
+                @include mobile{
+                    font-size: 40px;
+                }
+            }
+            .p-text{
+                margin-top: 20px;
+                max-width: 626px;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+                @include mobile{
+                    font-size: 18px;
+                }
+            }
+            button{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                font-size: 24px;
+                color: white;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.48px;
+                padding: 15px 30px;
+                max-width: 325px;
+                border: none;
+                @include mobile{
+                    font-size: 18px;
+                    max-width: 241px;
+                    padding: 15px 10px;
+                }
+            }
+        }
+    }
+    .scheme-work-section{
+        .schreme-work-container{
+            display: flex;
+            justify-content: center;
+            gap: 160px;
+            margin-top: 160px;
+            @include tabletVertical{
+                flex-direction: column;
+                gap: 60px;
+            }
+            .p-text-work .p-text{
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                @include mobile{
+                    font-size: 16px;
+                }
+            }
+            .main-contant{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                .h1-text{
+                    display: block;
+                    max-width: 960px;
+                    font-size: 58px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 110%;
+                    @include mobile{
+                        font-size: 30px;
+                    }
+                    .green{
+                        @include mobile{
+                            font-size: 30px
+                        }
+                        color: #025951;
+                    }
+                }
+                .middle{
+                    display: flex;
+                    gap: 104px;
+                    .p-text{
+                        max-width: 376px;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%;
+                        @include mobile{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .h1-text-grey{
+                    margin-top: 40px;
+                    color:  #8C8C8C;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 130%; 
+                    max-width: 665px;
+                    @include mobile{
+                        font-size: 24px;
+                    }
+                }
+            }
+
+        }
+    }
+    .our-advantages-section{
+        @include tabletVertical{
+            margin: -8px;
+            background: #0D0D0D;
+        }
+        .our-advantages-container{
+            border-radius: 16px;
+            background: #0D0D0D;
+            padding-top:80px;
+            padding-bottom: 80px;
+            width: 100%;
+            margin: 160px auto;
+            @include tabletHorizontal{
+                padding: 80px 0;
+                
+            }
+            .contant{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                padding: 0 220px;
+                @include tabletHorizontal{
+                    padding: 0 43px;
+                    
+                }
+                @include tabletVertical{
+                    display: block;
+
+                }
+                .h1-text{
+                    font-size: 58px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 110%;
+                    color: white;
+                    @include mobile{
+                        font-size: 30px;
+                    }
+                    
+                }
+                .mobile-fix{
+                    display: none;
+                    @include tabletVertical{
+                        display: block;
+                        margin-top: 40px;
+                    }
+                    .navifations{
+                        display: flex;
+                        justify-content: right;
+                        gap: 10px;
+                        svg{
+                            padding: 10px;
+                            border-radius: 1000px;
+                            background:  #FFF;
+                        }
+                    }
+                    .grid{
+                        border-radius: 16px;
+                        border: 1px solid #404040;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 40px;
+                        padding: 30px;
+                        text-align: left;
+                        .numbers-text{
+                            color:rgba(140, 140, 140, 1);
+                            font-size: 36px;
+                            font-weight: 600;
+                            line-height: 130%; 
+                            @include mobile{
+                                font-size: 36px;
+                            }
+                        }
+                        .description{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            
+                            .h1-text{
+                                font-size: 24px;
+                                font-weight: 600;
+                                line-height: 130%;
+                                color: white;
+                                max-width: 226px;
+                                @include mobile{
+                                    font-size: 24px;
+                                }
+                            }
+                            .p-text{
+                                color: rgba(191, 191, 191, 1);
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 130%; 
+                                max-width: 228px;
+                            }
+                        }
+                        
+                    }
+                }
+                .grids{
+                   
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    gap: 20px;
+                    @include tabletVertical{
+                        display: none;
+                    }
+                    .grid{
+                        border-radius: 16px;
+                        border: 1px solid #404040;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 40px;
+                        padding: 30px;
+                        text-align: left;
+                        .numbers-text{
+                            color:rgba(140, 140, 140, 1);
+                            font-size: 36px;
+                            font-weight: 600;
+                            line-height: 130%; 
+                        }
+                        .description{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            
+                            .h1-text{
+                                font-size: 24px;
+                                font-weight: 600;
+                                line-height: 130%;
+                                color: white;
+                                max-width: 226px;
+                            }
+                            .p-text{
+                                color: rgba(191, 191, 191, 1);
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 130%; 
+                                max-width: 228px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    .description-section{
+        .description-container{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 120px;
+            .contant{
+                padding: 0 220px;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                @include tabletHorizontal{
+                    padding: 0 43px ;
+                }
+                @include tabletVertical{
+                    flex-direction: column;
+                }
+                img{
+                    max-width: 577px;
+                    border-radius: 8px;
+                    border: 1px solid  rgba(191, 191, 191, 1);
+                    position: relative;
+                    z-index: 1;
+                    @include tabletHorizontal{
+                        width: 470px;
+                        height: 604px;
+                        object-fit: contain;
+                    }
+                    @include tabletVertical{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .main-description{
+                    padding: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    border-radius: 8px;
+                    border: 1px solid  rgba(191, 191, 191, 1);
+                    @include tabletHorizontal{
+                        max-width: 790px;
+                    }
+                    @include tabletVertical{
+                        padding: 20px;
+                    }
+                    .h1-text{
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 130%;
+                        max-width: 687px;
+                        @include mobile{
+                            font-size: 24px;
+                        }
+                    }
+                    .description-text{
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%;
+                        max-width: 637px;
+                        @include mobile{
+                            font-size: 18px;
+                        }
+                    }
+                    .p-text{
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%;
+                        max-width: 577px;
+                        @include mobile{
+                            font-size: 12px;
+                        }
+                    }
+                    .price-text{
+                        margin-top: 40px;
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%;
+                        letter-spacing: -0.96px;
+                        @include mobile{
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .installation-section{
+        .installation-container{
+            padding: 0 220px;
+            margin: 160px 0;
+            @include tabletHorizontal{
+                padding: 0 43px;
+            }
+            .installation{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                @include tabletVertical{
+                    display: block;
+
+                }
+                .h1-text{
+                    display: block;
+                    max-width: 546px;
+                    font-size: 58px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 110%;
+                    @include mobile{
+                        font-size: 30px;
+                    }
+                }
+                .small-grey-text{
+                    display: block;
+                    max-width: 626px;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%;
+                    @include tabletVertical{
+                        margin-top: 20px;
+                    }
+                    @include mobile{
+                        font-size: 18px;
+                    }
+                }
+                .mobile-fix{
+                    display: none;
+                    @include tabletVertical{
+                        display: block;
+                        margin-top: 40px;
+                    }
+                    .navifations{
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px;
+                        svg{
+                            padding: 10px;
+                            border-radius: 1000px;
+                            border: 2px solid rgba(242, 242, 242, 1);
+                        }
+                    }
+                    .grid{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        align-items: center;
+                        gap: 20px;
+                        img{
+                            width: 100%;
+                            border-radius: 16px;
+                            border: 5px solid  #BFBFBF;
+                            padding: 1px;
+                            @include tabletVertical{
+                                width: 50%;
+                                padding: 10px;
+                            }
+                        }
+                        .p-text{
+                            display: block;
+                            max-width: 206px;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 110%;
+                            @include mobile{
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+                .grids{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    margin-top: 20px;
+                    gap: 20px;
+                    width: 100%;
+                    @include tabletVertical{
+                        display: none;
+                    }
+                    .grid{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        align-items: center;
+                        gap: 20px;
+                        img{
+                            width: 100%;
+                            border-radius: 16px;
+                            border: 2px solid  #BFBFBF;
+                        }
+                        .p-text{
+                            display: block;
+                            max-width: 206px;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 110%;
+                        }
+                    }
+                }
+            }
+            .questions{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 160px;
+                @include tabletVertical{
+                    flex-direction: column;
+                    gap: 39px;
+                }
+                .text{
+                    @include tabletVertical{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 40px;
+                    }
+                    .h1-text{
+                        display: block;
+                        max-width: 490px;
+                        font-size: 58px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 110%;
+                        @include mobile{
+                            font-size: 30px;
+                        }
+                    }
+                    .p-text{
+                        display: block;
+                        color: #8C8C8C;
+                        max-width: 447px;
+                        max-width: 447px;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%;
+                        @include mobile{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .questions-contant .one,.two,.three{
+                    width: 640px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 40px 0;
+                    gap: 40px;
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                    @include tabletVertical{
+                        width: 100%;
+                    }
+                    .start{
+                        display: flex;
+                        align-items: start;
+                        justify-content: space-between;
+                        .h1-text{
+                            max-width: 446px;
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 130%; 
+                            letter-spacing: -0.64px;
+                            @include mobile{
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                    .p-text{
+                        max-width: 458px;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%; 
+                        display: none;
+                        @include mobile{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .variables-section{
+        .variables-container{
+            padding: 0 220px;
+            margin-top: 160px;
+            margin-bottom: 160px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            @include tabletHorizontal{
+                padding: 0 43px;
+            }
+            .h1-text{
+                font-size: 58px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 110%;
+                @include mobile{
+                    display: block;
+                    font-size: 30px;
+                }
+            }
+            .contant{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+                text-align: left;
+                @include tabletVertical{
+                    grid-template-columns: 1fr;
+                }
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    img{
+                        border-radius: 16px;
+                        max-width: 620px;
+                        max-height: 400px;
+                        @include mobile{
+                            width: 100%;
+                        }
+                    }
+                    .h1-text{
+                        max-width: 465px;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 130%;
+                    }
+                    .p-text{
+                        max-width: 407px;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%;
+                    }
+                }
+            }
+        }
+    }
+    .video-decription-section{
+        @include tabletVertical{
+            margin: -8px;
+            background-color: #0D0D0D;
+          
+        }
+        .video-container{
+          margin-top: 160px;
+            .contant{
+                display: flex;
+                flex-direction: column;
+                gap: 60px;
+                padding: 80px 220px;
+                background-color: #0D0D0D;
+                border-radius: 16px;
+                @include tabletHorizontal{
+                    padding: 80px 43px;
+                }
+                @include mobile{
+                    padding: 40px 20px;
+                }
+            .h1-text{
+                max-width: 490px;
+                font-size: 58px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 110%;
+                color: #BFBFBF;
+                @include mobile{
+                    font-size: 30px;
+                }
+            }
+            .main-contant{
+                display: flex;
+                justify-content: space-between;
+                gap: 60px;
+                @include tabletVertical{
+                    flex-direction: column;
+                }
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    video{
+                        width:100%;
+                        height: 548px;
+                        @include tabletVertical{
+                            width: 335px;
+                            height: 494px;
+                        }
+                        
+                    }
+                    .h1-text{
+                        @include mobile{
+                            font-size: 24px;
+
+                        }
+                    }
+                    .p-text{
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%;
+                        max-width: 640px;
+                        color: white;
+                        margin-bottom: 40px;
+                        @include mobile{
+                            font-size: 28px;
+                        }
+                        }
+                    }
+                    .description-p{
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%;
+                        color: white;
+                        max-width: 529px;
+                        color: #BFBFBF;
+                        @include mobile{
+                            font-size: 18px;
+                    }
+                }
+                
+            }
+            }
+        }
+    }
+    .example-section{
+        .example-container{
+            margin-top: 160px;
+            display: flex;
+            flex-direction: column;
+            gap: 160px;
+            .contant{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 40px;
+                text-align: center;
+                align-items: center;
+                padding: 0 220px;
+                @include tabletHorizontal{
+                    padding: 0 43px ;
+                }
+                @include tabletVertical{
+                    display: block;
+                }
+                .h1-text{
+                    display: block;
+                    max-width: 699px;
+                    font-size: 58px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 110%;
+                    @include mobile{
+                        font-size: 30px;
+                    }
+                }
+                .small-grey-text{
+                    display: block;
+                    max-width: 813px;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%;
+                    color: rgba(140, 140, 140, 1);
+                    @include tabletVertical{
+                        margin-top: 20px;
+                    }
+                    @include mobile{
+                        font-size: 18px;
+                    }
+                }
+                .mobile-fix{
+                    display: none;
+                    @include tabletVertical{
+                        display: block;
+                        margin-top: 40px;
+                    }
+                    .navifations{
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px;
+                        svg{
+                            padding: 10px;
+                            border-radius: 1000px;
+                            border: 2px solid rgba(242, 242, 242, 1);
+                            background: #FFF;
+                        }
+                    }
+                    img{
+                        width: 335px;
+                        height: 211px;
+                    }
+                }
+                .grids{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    margin-top: 40px;
+                    gap: 20px;
+                    @include tabletVertical{
+                        display: none;
+                    }
+                    img{
+                        width: 100%;
+                        border-radius: 8px;
+                    }
+                }
+            }
+            .contant-two{
+                display: flex;
+                gap: 90px;
+                padding: 0 220px;
+                justify-content: center;
+                @include tabletHorizontal{
+                    padding: 43px;
+                }
+                @include tabletVertical{
+                    flex-direction: column;
+                    padding: 43px;
+                    text-align: left;
+                    margin-top: 80px;
+                }
+                @include mobile{
+                    padding: 0;
+                }
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    text-align: left;
+                    .h1-text{
+                        font-size: 58px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 110%;
+                        max-width: 565px;
+                        @include mobile{
+                            font-size: 30px;
+                        }
+                    }
+                    .p-text{
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%;
+                        color: rgba(140, 140, 140, 1);
+                        @include tabletVertical{
+                            font-size: 18px;
+                        }
+                    }
+                    .big-grey-text{
+                        max-width: 549px;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%;
+                        color: rgba(140, 140, 140, 1);
+                        margin-top: 40px;
+                        @include mobile{
+                            font-size: 24px;
+                        }
+                    }
+                    .grids{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        gap: 20px;
+                        .p-text{
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            align-items: center;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 130%;
+                            padding: 10px 20px;
+                            border-radius: 1000px;
+                            border: 1px solid  #0D0D0D;
+                        }
+                        .one-srtuct,.two-struct{
+                            display: flex;
+                            gap: 20px;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            width: 549px;
+                            @include tabletVertical{
+                                width: 100%;
+                                max-width: 549px;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                            }
+
+                        }
+                    }
+
+                }
+                img{
+                    max-width: 640px;
+                    max-height: 755px;
+                }
+            }
+        }
+    }
+}
+.panel{
+     position:fixed;
+  top: 90px; /* Выравнивание с верхней частью header */
+  right: 0; /* Можете изменить на другое значение, если требуется */
+  width: 200px; /* Укажите нужную ширину */
+   /* Высота занимает всю доступную высоту */
+  background-color: #FFF;
+  z-index: 10; /* Установите z-index в нужное значение */
+  display: none;
+  flex-direction: column;
+    width: 100%;
+    .p-text{
+        border-bottom: 1px solid rgb(0, 0, 0,0.1);
+        color: #000;
+        padding: 24px 20px;
+        font-family: Inter Tight;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 21.6px */
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+.flex{
+    display: flex;
+}
